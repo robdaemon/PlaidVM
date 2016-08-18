@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/robdaemon/PlaidVM.svg?branch=master)](https://travis-ci.org/robdaemon/PlaidVM)
+
 # PlaidVM
 
 Project Plaid's Smalltalk VM and interpreter

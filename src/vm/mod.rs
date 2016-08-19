@@ -20,10 +20,14 @@ mod smallinteger;
 
 pub use self::smallinteger::SmallInteger;
 
+#[allow(dead_code)]
+#[allow(unused_variables)]
 pub struct ObjectPointer {
     ref_count: AtomicUsize
 }
 
+#[allow(dead_code)]
+#[allow(unused_variables)]
 impl ObjectPointer {
     pub fn new() -> ObjectPointer {
         ObjectPointer { ref_count: ATOMIC_USIZE_INIT }
@@ -38,18 +42,26 @@ impl ObjectPointer {
     }
 }
 
+#[allow(dead_code)]
+#[allow(unused_variables)]
 pub struct ValuePointer {
 
 }
 
+#[allow(dead_code)]
+#[allow(unused_variables)]
 pub struct ClassPointer {
 
 }
 
+#[allow(dead_code)]
+#[allow(unused_variables)]
 pub struct ObjectMemory {
 
 }
 
+#[allow(unused_variables)]
+#[allow(dead_code)]
 impl ObjectMemory {
     pub fn fetch_pointer(&self, field_index: i32, obj: ObjectPointer) -> ObjectPointer {
         ObjectPointer::new()
